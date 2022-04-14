@@ -9,4 +9,6 @@ RUN apt-add-repository --yes --update ppa:ansible/ansible
 
 RUN apt update && apt install -y ansible sshpass
 
+WORKDIR /ansible
+
 ENTRYPOINT [ "/bin/bash" ]
